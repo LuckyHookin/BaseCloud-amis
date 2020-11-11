@@ -52,7 +52,10 @@ function call({ url, data = {}, success, fail, complete , requestFail , debug , 
 			if (cacheKey && cacheSpace) {
 				setCache(cacheSpace , cacheKey , data );
 			}
-			callSuccess(data, success, fail, complete);
+			callSuccess(data, success, fail);
+			if (typeof complete == 'function') {
+				complete(data);
+			}
 		},
 		fail: (e) => {
 			if ( isDebug(debug) ) {
@@ -61,17 +64,17 @@ function call({ url, data = {}, success, fail, complete , requestFail , debug , 
 			}
 			if (typeof requestFail == 'function') {
 				requestFail(e);
-				return ;
+			}else{
+				uni.hideLoading();
+				uni.stopPullDownRefresh();
+				uni.showToast({
+					title: '请求失败',
+					icon: 'none'
+				});
 			}
 			if (typeof complete == 'function') {
-				complete(data);
+				complete(e);
 			}
-			uni.hideLoading();
-			uni.stopPullDownRefresh();
-			uni.showToast({
-				title: '请求失败',
-				icon: 'none'
-			});
 		}
 	});
 }
@@ -135,10 +138,7 @@ function clearCache(url){
 	})
 }
 
-function callSuccess(data, success, fail, complete) {
-	if (typeof complete == 'function') {
-		complete(data);
-	}
+function callSuccess(data, success, fail) {
 	if (data.state == 'needLogin') {
 		clearStorage();
 		// #ifdef H5

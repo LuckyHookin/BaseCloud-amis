@@ -46,6 +46,15 @@
             "path" : "pages/setting/setting",
             "style" : {}
         }
+        ,{
+            "path" : "pages/swiperList/swiperList",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
     ],
 	"globalStyle": {
 		"navigationStyle":"custom",

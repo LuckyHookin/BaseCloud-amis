@@ -1,5 +1,5 @@
 <template>
-	<layout pageKey="swiperList">
+	<layout pageKey="swiperList" :innerScroll="false">
 		<bc-amis :schema="schema"></bc-amis>
 	</layout>
 </template>

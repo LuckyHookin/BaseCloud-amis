@@ -1,0 +1,29 @@
+{
+  "name": "basecloud",
+  "version": "2.1.22",
+  "description": "BaseCloud是一套基于uniapp、uniCloud、uni-id的全栈开发框架，不依赖任何第三方框架，极度精简轻巧。",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://gitee.com/phoooob/BaseCloud.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "Apache 2.0" ,
+  "files":[
+      "cloudfunctions-aliyun/admin/controller/**", 
+	  "cloudfunctions-aliyun/user-center/controller/**",
+      "cloudfunctions-aliyun/common/base-cloud/intercepters/**", 
+      "cloudfunctions-aliyun/common/base-cloud/lib/**", 
+      "cloudfunctions-aliyun/common/base-cloud/index.js", 
+      "cloudfunctions-aliyun/common/base-cloud/package.json", 
+      "cloudfunctions-aliyun/common/uni-id/**",
+      "common/**",
+      "components/**",
+      "pages/**",
+      "static/**"
+  ]
+}

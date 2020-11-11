@@ -1,0 +1,57 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+            "path" : "pages/login/login",
+            "style" : {}
+        },{
+            "path" : "pages/menu/menuList",
+            "style" : {
+				"navigationBarTitleText":"菜单列表"
+			}
+        },{
+            "path" : "pages/role/roleEdit",
+            "style" : {
+				"navigationBarTitleText":"编辑角色"
+			}
+        },{
+            "path" : "pages/role/roleList",
+            "style" : {
+				"navigationBarTitleText":"角色列表"
+			}
+        },{
+            "path" : "pages/user/userEdit",
+            "style" : {
+				"navigationBarTitleText":"编辑用户"
+			}
+        },{
+            "path" : "pages/user/userList",
+            "style" : {
+				"navigationBarTitleText":"用户列表"
+			}
+        }
+        ,{
+            "path" : "pages/operateLog/operateLogList",
+            "style" : {
+				"navigationBarTitleText":"操作日志"
+			}
+        }
+        ,{
+            "path" : "pages/paramConfig/paramConfigEdit",
+            "style" : {"navigationBarTitleText":"系统参数设置"}
+        },{
+            "path" : "pages/paramConfig/paramConfigList",
+            "style" : {"navigationBarTitleText":"系统参数"}
+        }
+        ,{
+            "path" : "pages/setting/setting",
+            "style" : {}
+        }
+    ],
+	"globalStyle": {
+		"navigationStyle":"custom",
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "BaseCloud",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8"
+	}
+}

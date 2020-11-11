@@ -1,0 +1,16 @@
+/**
+ * @description For the convenience of updating the version, do not modify this file
+ */
+page{
+	font: 14px/1.5 "Helvetica Neue", Helvetica, Arial, "Microsoft Yahei", "Hiragino Sans GB", "Heiti SC", "WenQuanYi Micro Hei", sans-serif;
+	background-color: #f1f1f1;
+}
+
+body, html{
+	box-sizing: border-box;
+	user-select:auto!important;
+}
+
+@import "base-cloud-font" ;
+@import "base-cloud-mobile" ;
+@import "base-cloud-pc" ; //适配PC端，如果只移动端使用，可以删除

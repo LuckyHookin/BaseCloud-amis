@@ -1,0 +1,288 @@
+// 在本文件中可配置云数据库初始化，数据格式见：https://uniapp.dcloud.io/uniCloud/cf-database?id=db_init
+
+// 编写完毕后对本文件点右键，可按配置规则创建表和添加数据
+
+{
+	"uni-id-users": {
+		"data": [
+			{
+			  "isSuperAdmin": true,
+			  "password": "5036a4fb1bb73640d1a521b49cd1918005dc380c",
+			  "realNameAuth": {
+			    "contact_person": "超级管理员"
+			  },
+			  "register_date": 1595658646343,
+			  "status": 0,
+			  "username": "admin",
+			  "login_ip_limit": [],
+			  "last_login_date": 1599976322953,
+			  "comment": "",
+			  "mobile": "15833221032",
+			  "roleIds": [
+			    "5f51df97a51cb3000119ef88"
+			  ],
+			  "roleNames": "日常管理员",
+			  "roleType": [
+			    1
+			  ]
+			}
+		],
+		"index": [{
+			"IndexName": "username",
+			"MgoKeySchema": {
+				"MgoIndexKeys": [{
+					"Name": "username",
+					"Direction": "1"
+				}],
+				"MgoIsUnique": false
+			}
+		}, {
+			"IndexName": "mobile",
+			"MgoKeySchema": {
+				"MgoIndexKeys": [{
+					"Name": "mobile",
+					"Direction": "1"
+				}],
+				"MgoIsUnique": false
+			}
+		}, {
+			"IndexName": "email",
+			"MgoKeySchema": {
+				"MgoIndexKeys": [{
+					"Name": "email",
+					"Direction": "1"
+				}],
+				"MgoIsUnique": false
+			}
+		}, {
+			"IndexName": "wx_openid.app-plus",
+			"MgoKeySchema": {
+				"MgoIndexKeys": [{
+					"Name": "wx_openid.app-plus",
+					"Direction": "1"
+				}],
+				"MgoIsUnique": false
+			}
+		}, {
+			"IndexName": "wx_openid.mp-weixin",
+			"MgoKeySchema": {
+				"MgoIndexKeys": [{
+					"Name": "wx_openid.mp-weixin",
+					"Direction": "1"
+				}],
+				"MgoIsUnique": false
+			}
+		}, {
+			"IndexName": "wx_unionid",
+			"MgoKeySchema": {
+				"MgoIndexKeys": [{
+					"Name": "wx_unionid",
+					"Direction": "1"
+				}],
+				"MgoIsUnique": false
+			}
+		}, {
+			"IndexName": "ali_openid",
+			"MgoKeySchema": {
+				"MgoIndexKeys": [{
+					"Name": "ali_openid",
+					"Direction": "1"
+				}],
+				"MgoIsUnique": false
+			}
+		},{
+			"IndexName": "my_invite_code",
+			"MgoKeySchema": {
+				"MgoIndexKeys": [{
+					"Name": "my_invite_code",
+					"Direction": "1"
+				}],
+				"MgoIsUnique": false
+			}
+		},{
+			"IndexName": "inviter_uid",
+			"MgoKeySchema": {
+				"MgoIndexKeys": [{
+					"Name": "inviter_uid",
+					"Direction": "1"
+				}],
+				"MgoIsUnique": false
+			}
+		},{
+			"IndexName": "invite_time",
+			"MgoKeySchema": {
+				"MgoIndexKeys": [{
+					"Name": "invite_time",
+					"Direction": "1"
+				}],
+				"MgoIsUnique": false
+			}
+		}]
+	},
+	"uni-verify": {
+		"data": [],
+		"index": [{
+			"IndexName": "mobile",
+			"MgoKeySchema": {
+				"MgoIndexKeys": [{
+					"Name": "mobile",
+					"Direction": "1"
+				}, {
+					"Name": "code",
+					"Direction": "1"
+				}],
+				"MgoIsUnique": false
+			}
+		}, {
+			"IndexName": "email",
+			"MgoKeySchema": {
+				"MgoIndexKeys": [{
+					"Name": "email",
+					"Direction": "1"
+				}, {
+					"Name": "code",
+					"Direction": "1"
+				}],
+				"MgoIsUnique": false
+			}
+		}]
+	},
+	"t_menu" : {
+		"data" : [
+			{"_id":"base_cloud_system","icon":"bIcon-setFill","isShow":true,"name":"系统设置","orderNum":30,"parentId":0,"type":1,"platform":1},
+			{"_id":"base_cloud_system_menu","isShow":true,"key":"menu","name":"菜单管理","orderNum":1,"pages":"/pages/menu/menuList","parentId":"base_cloud_system","saveLogUrl":"","type":2,"url":["admin/menu/list"],"platform":1},
+			{"_id":"base_cloud_menu_edit","isShow":true,"name":"编辑","orderNum":1,"parentId":"base_cloud_system_menu","saveLogUrl":["admin/menu/save"],"type":3,"url":["admin/menu/info","admin/menu/save","admin/menu/listByType"]},
+			{"_id":"base_cloud_menu_remove","isShow":true,"name":"删除","orderNum":2,"parentId":"base_cloud_system_menu","saveLogUrl":["admin/menu/delete"],"type":3,"url":["admin/menu/delete"]},
+			{"_id":"base_cloud_system_user","isShow":true,"key":"user","name":"用户管理","orderNum":2,"pages":"/pages/user/userList","parentId":"base_cloud_system","saveLogUrl":"","type":2,"url":["user-center/user/list"]},
+			{"_id":"base_cloud_user_edit","isShow":true,"name":"编辑","orderNum":1,"parentId":"base_cloud_system_user","saveLogUrl":["user-center/user/save"],"type":3,"url":["user-center/user/info","user-center/user/save","admin/role/options"],"platform":1},
+			{"_id":"base_cloud_user_remove","isShow":true,"name":"删除","orderNum":2,"parentId":"base_cloud_system_user","saveLogUrl":["user-center/user/delete"],"type":3,"url":["user-center/user/delete"]},
+			{"_id":"base_cloud_user_status","isShow":true,"name":"禁用","orderNum":3,"parentId":"base_cloud_system_user","saveLogUrl":["user-center/user/changeStatus"],"type":3,"url":["user-center/user/changeStatus"]},
+			{"_id":"base_cloud_system_role","isShow":true,"key":"role","name":"角色管理","orderNum":3,"pages":"/pages/role/roleList","parentId":"base_cloud_system","saveLogUrl":"","type":2,"url":["admin/role/list"],"platform":1},
+			{"_id":"base_cloud_role_edit","isShow":true,"name":"编辑","orderNum":1,"parentId":"base_cloud_system_role","saveLogUrl":["admin/role/save"],"type":3,"url":["admin/role/info","admin/role/save"]},
+			{"_id":"base_cloud_role_remove","isShow":true,"name":"删除","orderNum":2,"parentId":"base_cloud_system_role","saveLogUrl":["admin/role/delete"],"type":3,"url":["admin/role/delete"]},
+			{"_id":"base_cloud_system_operate","isShow":true,"key":"operateLog","name":"操作日志","orderNum":4,"pages":"/pages/operateLog/operateLogList","parentId":"base_cloud_system","saveLogUrl":"","type":2,"url":["admin/operateLog"],"platform":1},
+			{"_id":"base_cloud_system_config","isShow":true,"key":"paramConfig","name":"系统参数配置","orderNum":5,"pages":"/pages/paramConfig/paramConfigList","parentId":"base_cloud_system","saveLogUrl":"","type":2,"url":["admin/paramConfig/list"],"platform":1},
+			{"_id":"base_cloud_config_edit","isShow":true,"name":"编辑","orderNum":1,"parentId":"base_cloud_system_config","saveLogUrl":["admin/paramConfig/save"],"type":3,"url":["admin/paramConfig/save","admin/paramConfig/info"]},
+			{"_id":"base_cloud_config_remove","isShow":true,"name":"删除","orderNum":2,"parentId":"base_cloud_system_config","saveLogUrl":["admin/paramConfig/delete"],"type":3,"url":["admin/paramConfig/delete"]},
+			{"_id":"base_cloud_setting","isShow":false,"key":"setting","name":"修改个人信息","orderNum":6,"pages":"/pages/setting/setting","parentId":"base_cloud_system","saveLogUrl":["user-center/user/modify"],"type":2,"url":["user-center/user/myInfo","user-center/user/modify"],"platform":1}
+		],
+		"index" : [
+			{
+				"IndexName": "type",
+				"MgoKeySchema": {
+					"MgoIndexKeys": [{
+						"Name": "type",
+						"Direction": "1"
+					}],
+					"MgoIsUnique": false
+				}
+			},
+			{
+				"IndexName": "parentId",
+				"MgoKeySchema": {
+					"MgoIndexKeys": [{
+						"Name": "parentId",
+						"Direction": "1"
+					}],
+					"MgoIsUnique": false
+				}
+			},
+			{
+				"IndexName": "orderNum",
+				"MgoKeySchema": {
+					"MgoIndexKeys": [{
+						"Name": "orderNum",
+						"Direction": "1"
+					}],
+					"MgoIsUnique": false
+				}
+			}
+		]
+	},
+	"t_role" : {
+		"data" : [
+			{
+				"_id": "5f88500b1c229600010804e8",
+				"menuIds": ["base_cloud_system", "base_cloud_menu_edit", "base_cloud_menu_remove", "base_cloud_user_edit",
+					"base_cloud_user_remove", "base_cloud_user_status", "base_cloud_role_edit", "base_cloud_role_remove",
+					"base_cloud_config_edit", "base_cloud_config_remove", "base_cloud_system_menu", "base_cloud_system_user",
+					"base_cloud_system_role", "base_cloud_system_operate", "base_cloud_system_config", "base_cloud_setting"
+				],
+				"name": "日常管理员",
+				"remark": "日常系统维护，拥有全部管理权限，非超级管理员。",
+				"type": 1
+			}
+		],
+		"index" : [
+			{
+				"IndexName": "name",
+				"MgoKeySchema": {
+					"MgoIndexKeys": [{
+						"Name": "name",
+						"Direction": "1"
+					}],
+					"MgoIsUnique": false
+				}
+			},
+			{
+				"IndexName": "menuIds",
+				"MgoKeySchema": {
+					"MgoIndexKeys": [{
+						"Name": "menuIds",
+						"Direction": "1"
+					}],
+					"MgoIsUnique": false
+				}
+			}
+		]
+	},
+	"t_operate_log" : {
+		"data" : [
+			
+		],
+		"index" : [
+			{
+				"IndexName": "userName",
+				"MgoKeySchema": {
+					"MgoIndexKeys": [{
+						"Name": "userName",
+						"Direction": "1"
+					}],
+					"MgoIsUnique": false
+				}
+			},
+			{
+				"IndexName": "actionName",
+				"MgoKeySchema": {
+					"MgoIndexKeys": [{
+						"Name": "actionName",
+						"Direction": "1"
+					}],
+					"MgoIsUnique": false
+				}
+			},
+			{
+				"IndexName": "name",
+				"MgoKeySchema": {
+					"MgoIndexKeys": [{
+						"Name": "name",
+						"Direction": "1"
+					}],
+					"MgoIsUnique": false
+				}
+			}
+		]
+	},
+	"t_param_config" : {
+		"data" : [
+			{
+			  "_id" : "LOG_REMAIN_DAYS" ,
+			  "name": "操作日志保留天数",
+			  "value": 0,
+			  "remark": "单位：天，在uniCloud管理端启动定时任务后，系统将自动删除过期的操作日志。",
+			  "updateTime": 1596957255271
+			}
+		],
+		"index" : []
+	}
+}

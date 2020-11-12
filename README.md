@@ -10,7 +10,7 @@ basecloud 框架地址：[BaseCloud - 云开发全栈极速开发框架](https:/
 
 amis 可视化编辑器：[AMIS 页面](https://fex-team.github.io/amis-editor-demo/)
 
-在线示例：[BaseCloud](https://static-06fa519a-c7ae-418d-b4d4-87e01654cdaf.bspapp.com/#/pages/menu/menuList)
+在线示例：[BaseCloud](https://static-06fa519a-c7ae-418d-b4d4-87e01654cdaf.bspapp.com/#/pages/menu/menuList) 账号：admin，密码：123123123
 
 ![](https://i.loli.net/2020/11/11/z7aWmpe5KoYxMEk.png "示例1")
 

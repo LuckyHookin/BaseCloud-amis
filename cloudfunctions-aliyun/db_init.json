@@ -153,10 +153,9 @@
 				"name": "系统设置",
 				"orderNum": 30,
 				"parentId": 0,
-				"type": 1,
-				"platform": 1
-			},
-			{
+				"platform": 1,
+				"type": 1
+			}, {
 				"_id": "base_cloud_system_menu",
 				"isShow": true,
 				"key": "menu",
@@ -164,12 +163,11 @@
 				"orderNum": 1,
 				"pages": "/pages/menu/menuList",
 				"parentId": "base_cloud_system",
+				"platform": 1,
 				"saveLogUrl": "",
 				"type": 2,
-				"url": ["admin/menu/list"],
-				"platform": 1
-			},
-			{
+				"url": ["admin/menu/list"]
+			}, {
 				"_id": "base_cloud_menu_edit",
 				"isShow": true,
 				"name": "编辑",
@@ -178,8 +176,7 @@
 				"saveLogUrl": ["admin/menu/save"],
 				"type": 3,
 				"url": ["admin/menu/info", "admin/menu/save", "admin/menu/listByType"]
-			},
-			{
+			}, {
 				"_id": "base_cloud_menu_remove",
 				"isShow": true,
 				"name": "删除",
@@ -188,8 +185,7 @@
 				"saveLogUrl": ["admin/menu/delete"],
 				"type": 3,
 				"url": ["admin/menu/delete"]
-			},
-			{
+			}, {
 				"_id": "base_cloud_system_user",
 				"isShow": true,
 				"key": "user",
@@ -200,19 +196,17 @@
 				"saveLogUrl": "",
 				"type": 2,
 				"url": ["user-center/user/list"]
-			},
-			{
+			}, {
 				"_id": "base_cloud_user_edit",
 				"isShow": true,
 				"name": "编辑",
 				"orderNum": 1,
 				"parentId": "base_cloud_system_user",
+				"platform": 1,
 				"saveLogUrl": ["user-center/user/save"],
 				"type": 3,
-				"url": ["user-center/user/info", "user-center/user/save", "admin/role/options"],
-				"platform": 1
-			},
-			{
+				"url": ["user-center/user/info", "user-center/user/save", "admin/role/options"]
+			}, {
 				"_id": "base_cloud_user_remove",
 				"isShow": true,
 				"name": "删除",
@@ -221,8 +215,7 @@
 				"saveLogUrl": ["user-center/user/delete"],
 				"type": 3,
 				"url": ["user-center/user/delete"]
-			},
-			{
+			}, {
 				"_id": "base_cloud_user_status",
 				"isShow": true,
 				"name": "禁用",
@@ -231,8 +224,7 @@
 				"saveLogUrl": ["user-center/user/changeStatus"],
 				"type": 3,
 				"url": ["user-center/user/changeStatus"]
-			},
-			{
+			}, {
 				"_id": "base_cloud_system_role",
 				"isShow": true,
 				"key": "role",
@@ -240,12 +232,11 @@
 				"orderNum": 3,
 				"pages": "/pages/role/roleList",
 				"parentId": "base_cloud_system",
+				"platform": 1,
 				"saveLogUrl": "",
 				"type": 2,
-				"url": ["admin/role/list"],
-				"platform": 1
-			},
-			{
+				"url": ["admin/role/list"]
+			}, {
 				"_id": "base_cloud_role_edit",
 				"isShow": true,
 				"name": "编辑",
@@ -254,8 +245,7 @@
 				"saveLogUrl": ["admin/role/save"],
 				"type": 3,
 				"url": ["admin/role/info", "admin/role/save"]
-			},
-			{
+			}, {
 				"_id": "base_cloud_role_remove",
 				"isShow": true,
 				"name": "删除",
@@ -264,8 +254,7 @@
 				"saveLogUrl": ["admin/role/delete"],
 				"type": 3,
 				"url": ["admin/role/delete"]
-			},
-			{
+			}, {
 				"_id": "base_cloud_system_operate",
 				"isShow": true,
 				"key": "operateLog",
@@ -273,12 +262,11 @@
 				"orderNum": 4,
 				"pages": "/pages/operateLog/operateLogList",
 				"parentId": "base_cloud_system",
+				"platform": 1,
 				"saveLogUrl": "",
 				"type": 2,
-				"url": ["admin/operateLog"],
-				"platform": 1
-			},
-			{
+				"url": ["admin/operateLog"]
+			}, {
 				"_id": "base_cloud_system_config",
 				"isShow": true,
 				"key": "paramConfig",
@@ -286,12 +274,11 @@
 				"orderNum": 5,
 				"pages": "/pages/paramConfig/paramConfigList",
 				"parentId": "base_cloud_system",
+				"platform": 1,
 				"saveLogUrl": "",
 				"type": 2,
-				"url": ["admin/paramConfig/list"],
-				"platform": 1
-			},
-			{
+				"url": ["admin/paramConfig/list"]
+			}, {
 				"_id": "base_cloud_config_edit",
 				"isShow": true,
 				"name": "编辑",
@@ -300,8 +287,7 @@
 				"saveLogUrl": ["admin/paramConfig/save"],
 				"type": 3,
 				"url": ["admin/paramConfig/save", "admin/paramConfig/info"]
-			},
-			{
+			}, {
 				"_id": "base_cloud_config_remove",
 				"isShow": true,
 				"name": "删除",
@@ -310,8 +296,7 @@
 				"saveLogUrl": ["admin/paramConfig/delete"],
 				"type": 3,
 				"url": ["admin/paramConfig/delete"]
-			},
-			{
+			}, {
 				"_id": "base_cloud_setting",
 				"isShow": false,
 				"key": "setting",
@@ -319,11 +304,60 @@
 				"orderNum": 6,
 				"pages": "/pages/setting/setting",
 				"parentId": "base_cloud_system",
+				"platform": 1,
 				"saveLogUrl": ["user-center/user/modify"],
 				"type": 2,
-				"url": ["user-center/user/myInfo", "user-center/user/modify"],
+				"url": ["user-center/user/myInfo", "user-center/user/modify"]
+			}, {
+				"_id": "5fabadeff6dffd0001cc2029",
+				"type": 1,
+				"name": "首页",
+				"icon": "bIcon-homeFill",
+				"orderNum": 40,
+				"parentId": 0,
+				"isShow": true,
 				"platform": 1
+			}, {
+				"_id": "5fabae8e2e34dd0001f56998",
+				"type": 2,
+				"name": "轮播图",
+				"key": "swiperList",
+				"orderNum": 1,
+				"saveLogUrl": "",
+				"isShow": true,
+				"platform": 1,
+				"parentId": {
+					"$oid": "5fabadeff6dffd0001cc2029"
+				},
+				"url": ["admin/swiperList/list"],
+				"pages": "/pages/swiperList/swiperList",
+				"update_time": 1605087223489
+			}, {
+				"_id": "5fabaed0367c440001b5cfd4",
+				"type": 3,
+				"name": "编辑",
+				"orderNum": 1,
+				"saveLogUrl": ["admin/swiperList/save"],
+				"platform": 1,
+				"parentId": {
+					"$oid": "5fabae8e2e34dd0001f56998"
+				},
+				"url": ["admin/swiperList/save"],
+				"isShow": true
+			}, {
+				"_id": "5fabaf3bf6dffd0001cc22db",
+				"type": 3,
+				"name": "删除",
+				"orderNum": 11,
+				"saveLogUrl": ["admin/swiperList/delete"],
+				"platform": 1,
+				"parentId": {
+					"$oid": "5fabae8e2e34dd0001f56998"
+				},
+				"url": ["admin/swiperList/delete"],
+				"isShow": true
 			}
+
 		],
 		"index": [{
 				"IndexName": "type",
@@ -439,19 +473,20 @@
 	},
 	"swiperList": {
 		"data": [{
-			"_id": "5f9963082ee2c00001de463d",
-			"image": "https://vkceyugu.cdn.bspapp.com/VKCEYUGU-dc-site/9f780e80-bcfb-11ea-a30b-e311646dfaf2.png",
-			"title": 234,
-			"url": "/pages/index/index",
-			"createTime": 1603887880201
-		},
-		{
-			"_id": "5f9962db266d1400015083e4",
-			"image": "https://docs.base-cloud.joiny.cn/static/img/logoTextLight.e7fc94c0.png",
-			"title": "hahaha",
-			"url": "/pages/index/index",
-			"createTime": 1603887835921
-		}],
+				"_id": "5f9963082ee2c00001de463d",
+				"image": "https://vkceyugu.cdn.bspapp.com/VKCEYUGU-dc-site/9f780e80-bcfb-11ea-a30b-e311646dfaf2.png",
+				"title": 234,
+				"url": "/pages/index/index",
+				"createTime": 1603887880201
+			},
+			{
+				"_id": "5f9962db266d1400015083e4",
+				"image": "https://docs.base-cloud.joiny.cn/static/img/logoTextLight.e7fc94c0.png",
+				"title": "hahaha",
+				"url": "/pages/index/index",
+				"createTime": 1603887835921
+			}
+		],
 		"index": []
 	}
 }

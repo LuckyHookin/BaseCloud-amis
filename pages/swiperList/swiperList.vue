@@ -27,12 +27,14 @@
                             {
                                 "label": "标题",
                                 "type": "text",
-                                "name": "title"
+                                "name": "title",
+                                "required": true
                             },
                             {
                                 "type": "url",
                                 "label": "图像地址",
-                                "name": "image"
+                                "name": "image",
+                                "required": true
                             },
                             {
                                 "type": "image",
@@ -51,7 +53,8 @@
                             {
                                 "type": "text",
                                 "label": "跳转地址",
-                                "name": "url"
+                                "name": "url",
+                                "required": true
                             }
                         ],
                         "api": "admin/swiperList/save"
@@ -62,7 +65,7 @@
         },
         {
             "type": "crud",
-            "api": "get:admin/swiperList/list",
+            "api": "admin/swiperList/list",
             "columns": [
                 {
                     "type": "image",
@@ -172,7 +175,8 @@
     "messages": {
     },
     "bodyClassName": "",
-    "className": "bg-white"
+    "className": "bg-white",
+    "initApi": ""
 }
 			}
 		},

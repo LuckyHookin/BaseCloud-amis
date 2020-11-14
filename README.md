@@ -206,7 +206,7 @@ amis 可视化编辑器：[AMIS 页面](https://fex-team.github.io/amis-editor-d
 
 以上两个接口可触发客户端文件上传 `uniCloud.uploadFile()`。
 
-- 用户鉴权函数为 `hasAuth(’云函数路径‘)`
+- 用户鉴权函数为 `hasAuth('云函数路径')`
   
   可以在组件的显示和隐藏配置中以表达式的方式填写：
   
@@ -220,7 +220,7 @@ amis 可视化编辑器：[AMIS 页面](https://fex-team.github.io/amis-editor-d
 
 - 由于 amis 本身的关系，组件只支持 h5，移动端和 pc 都行。
 
-- **重要！** 客户端 `common/js/base-cloud-client.js` 请使用 [gitee](https://gitee.com/phoooob/BaseCloud)上的最新版本，作者还没同步更新到插件市场。
+- **重要！** 项目的 `common/js/base-cloud-client.js` 请使用 [gitee](https://gitee.com/phoooob/BaseCloud) 上的最新版本，作者还没同步更新到插件市场。
 
 - 云函数的返回格式要统一：
   
